@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(201, 202, 202);
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#informasi, .form-container {
+    box-shadow: 0 4px 12px rgba(48, 77, 142, 0.4);
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px 30px 30px 30px;
+    border-radius: 12px;
+    max-width: 650px;
+    width: 100%;
+    color: rgb(73, 73, 73);
+    font-weight: 600;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#informasi h1, .form-header h1 {
+    text-align: center;
+    background-color: rgb(37, 108, 188);
+    margin: -20px -30px 25px -30px;
+    padding: 20px 10px;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+}
+
+fieldset {
+    border: 1px solid rgb(201, 218, 255);
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+legend {
+    color: rgb(32, 99, 174);
+    font-weight: bold;
+    padding: 2px 10px;
+    background-color: rgb(201, 218, 255);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: rgb(73, 73, 73);
+    font-size: 14px;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(201, 218, 255);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: rgb(37, 108, 188);
+    box-shadow: 0 0 0 3px rgba(37, 108, 188, 0.2);
+}
+
+.link, .btn-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 20px auto 0;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(201, 218, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(32, 99, 174);
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+.link a {
+    text-decoration: none;
+    color: rgb(32, 99, 174);
+    transition: color 0.2s linear;
+}
+
+.link:hover, .btn-submit:hover {
+    background-color: rgb(27, 79, 142);
+    color: white;
+    transform: scale(1.05);
+}
+
+.link:hover a {
+    color: white;
+}

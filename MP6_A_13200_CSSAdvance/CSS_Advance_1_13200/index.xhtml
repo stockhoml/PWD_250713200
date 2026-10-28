@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Organisasi</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="informasi">
+        <h1>Scholarship Registration Form</h1>
+        <form action="" method="post" enctype="multipart/form-data">
+            <table cellspacing="10" cellpadding="10" border="0"
+                    style="border-collapse:collapse; width:100%;">
+                <tr>
+                    <td>
+                        <label for="nama"><strong>Full Name</strong></label>
+                    </td>
+                    <td><input type="text" id="nama" name="nama" size="30" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nim"><strong>Student Number</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="nim" name="nim" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fakultas"><strong>Faculty</strong>
+                        </label>
+                    </td>
+                    <td>
+                        <select id="fakultas" name="fakultas">
+                            <option>--- Choose a Faculty ---</option>
+                            <option>Law</option>
+                            <option>Politic</option>
+                            <option>Medicine</option>
+                            <option>Literature</option>
+                            <option>Engineering</option>
+                            <option>Arts and Culture</option>
+                            <option>Economics and business</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email"><strong>Email</strong></label>
+                    </td>
+                    <td><input type="text" id="email" name="email" size="30" /></td>
+                </tr>
+                <tr>
+                    <td><label for="telepon"><strong>Phone Number</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="telepon" name="telepon" size="30" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Gender</strong>
+                    </td>
+                    <td>
+                        <input type="radio" id="laki" name="jk" value="Laki-laki" />
+                        <label for="laki">Male</label>
+
+                        <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+                        <label for="perempuan">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="semester"><strong>Semester</strong></label>
+                    </td>
+                    <td>
+                        <select id="semester" name="semester">
+                            <option>1st Semester</option>
+                            <option>2nd Semester</option>
+                            <option>3rd Semester</option>
+                            <option>4th Semester</option>
+                            <option>5th Semester</option>
+                            <option>6th Semester</option>
+                            <option>7th Semester</option>
+                            <option>8th Semester</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Desired Scholarship</strong>
+                    </td>
+                    <td>
+                        <input type="radio" id="b1" name="b1" value="b1" />
+                        <label for="b1">F1STRA</label>
+
+                        <input type="radio" id="b2" name="b2" value="b2" />
+                        <label for="b2">Paragon Scholarship Program</label>
+
+                        <input type="radio" id="b2" name="b3" value="b2" />
+                        <label for="b3">Djarum Scholarship</label>
+
+                        <input type="radio" id="b3" name="b4" value="b3" />
+                        <label for="b4">Bank Indonesia Scholarship</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:top;">
+                        <strong>Experience</strong>
+                    </td>
+                    <td>
+                        <p>
+                            <strong>Activities</strong><br />
+                            <input type="checkbox" id="comitee"
+                                    name="pengalaman"
+                                    value="Comitee" />
+                            <label for="comitee">Comitee</label>
+
+                            <input type="checkbox" id="organization"
+                                    name="pengalaman"
+                                    value="Organization" />
+                            <label for="organization">Organization</label>
+
+                            <input type="checkbox" id="volunteer"
+                                    name="pengalaman"
+                                    value="Volunteer" />
+                            <label for="volunteer">Volunteer</label>
+                        </p>
+                        <p>
+                            <strong>Skills</strong><br />
+                            <input type="checkbox" id="leadership" 
+                                    name="kemampuan"
+                                    value="Leadership" />
+                            <label for="leadership">Leadership</label>
+
+                            <input type="checkbox" id="problemsolving"
+                                    name="kemampuan"
+                                    value="Problem Solving" />
+                            <label for="problemsolving">Problem Solving</label>
+
+                            <input type="checkbox" id="teamwork" 
+                                    name="kemampuan"
+                                    value="Teamwork" />
+                            <label for="teamwork">Teamwork</label>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="vertical-align:top;">
+                        <label for="alasan"><strong>Reason for Applying</strong></label>
+                    </td>
+                    <td>
+                        <textarea id="alasan" name="alasan" 
+                                    rows="8" cols="30"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cv"><strong>Upload CV</strong></label>
+                    </td>
+                    <td>
+                        <input type="file" id="cv" name="cv"
+                                accept="application/pdf" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" name="daftar" value="Register" class="link" />
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+    </div>
+</body>
+</html>
