@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors[] = "Nama hanya boleh mengandung huruf dan spasi.";
     }
 
-    if (!empty($npm) && !preg_match("/^*$/", $npm)) {
+    if (!empty($npm) && !preg_match("/^[0-9]*$/", $npm)) {
         $errors[] = "NPM hanya boleh mengandung angka.";
     }
 
